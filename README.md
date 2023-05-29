@@ -6,3 +6,13 @@ This is created using python, pip packages required can be found in src/requirem
 Currently, there is a requirement you are using a 1920x1080 monitor with the game running in fullscreen/windowed fullscreen mode to use the small amount of image recognition on the correct pixels. 
 
 This will be changed in the future to allow for any resolution, either using audio cues or more likely a different method of setting up image recognition.
+
+If you wish to build after changes yourself, you can use:
+
+```
+pyinstaller --onefile --add-data "FishingImages;FishingImages" .\main.py
+```
+Note that this will require pyinstaller:
+```
+pip install pyinstaller
+```
